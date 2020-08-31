@@ -121,6 +121,8 @@ type NavigationItem implements Node {
 
   "The ID of the shop the navigation item belongs to"
   shopId: ID!
+
+  tagId: String
 }
 
 "Represents the data for a navigation item"
@@ -178,6 +180,8 @@ type NavigationTree implements Node {
 type NavigationTreeItem {
   "Whether the navigation item should display its children"
   expanded: Boolean
+
+  categoryName: String
 
   "Whether the navigation item should be hidden from customers"
   isPrivate: Boolean
@@ -315,6 +319,9 @@ input NavigationItemInput {
 
   "Shop ID of the navigation item"
   shopId: ID!
+
+  tagId: String
+
 }
 
 "NavigationItemData input"

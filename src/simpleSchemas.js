@@ -106,6 +106,10 @@ export const NavigationItem = new SimpleSchema({
   "hasUnpublishedChanges": {
     type: Boolean,
     optional: true
+  },
+  "tagId": {
+    type: String,
+    optional: true
   }
 });
 
